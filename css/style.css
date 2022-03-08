@@ -1,0 +1,379 @@
+:root {
+    --white : #ffffff;
+    --black : rgb(0, 0, 0);
+    --gray : rgb(141, 141, 141);
+    --colorInput : rgb(59, 59, 59);
+    --yellow : rgb(255, 187, 70);
+    --pink : rgb(221, 22, 69);
+    --button1 : rgb(230, 63, 70);
+    --button2 : rgb(235, 90, 70);
+    --button3 : rgb(239, 107, 70);
+    --button4 : rgb(243, 127, 70);
+    --button5 : rgb(248, 154, 70);
+}
+
+body {
+    font-family: 'EB Garamond', serif;
+    font-size: 16px;
+    margin: 0;
+    background: transparent linear-gradient(120deg, var(--yellow) 0%, var(--pink) 100%);
+    background-repeat: no-repeat;
+}
+
+/* header */
+
+.separator {
+    border : 1px solid hidden;
+    padding: 1px 20px;
+    width: 90%;
+    margin: 0 auto 50px auto;
+    background : transparent linear-gradient(120deg, var(--pink) 0%, var(--yellow) 100%);
+    
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 4rem;
+    color: var(--white);
+    margin: 20px auto 0 auto;
+}
+
+.name {
+    text-decoration: none;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--white);
+    margin: 10px auto 20px auto;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    margin: 60px 200px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--white);
+    border-radius: 20px;
+}
+
+.button1 {
+    border: 1px solid var(--button1);
+    padding: 5px 15px;
+    background: var(--button1);
+}
+
+.button2 {
+    border: 1px solid var(--button2);
+    padding: 5px 15px;
+    background: var(--button2);
+}
+
+.button3 {
+    border: 1px solid var(--button3);
+    padding: 5px 15px;
+    background: var(--button3);
+}
+
+.button4 {
+    border: 1px solid var(--button4);
+    padding: 5px 15px;
+    background: var(--button4);
+}
+
+.button5 {
+    border: 1px solid var(--button5);
+    padding: 5px 15px;
+    background: var(--button5);
+}
+
+
+/* main index */ 
+
+main {
+    padding-bottom: 200px;
+}
+
+
+main .introducation {
+    text-align: center;
+    margin: 10% 15% 5% 15%; 
+} 
+
+
+main .introducation h3 {
+    font-size: 2rem;
+    margin : 0;
+    color: var(--white);
+}
+
+
+main .introducation p {
+    color: var(--white);
+    margin : 20px;
+    font-weight: normal;
+}
+
+
+
+main .advert { 
+    margin : 0 20% ;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap : 10px ;
+}
+
+Main h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin : 0;
+    color: var(--white);
+}
+
+
+
+main .advert h4 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: var(--white);
+}
+
+
+main .advert p {
+    color: var(--white);
+    margin-bottom : 40px;
+}
+
+
+main .advert a {
+    font-size: 1.1rem;
+    background-color: var(--white);
+    color: var(--black);
+    text-decoration: none;
+    border-radius: 30px;
+    padding : 10px 20px;
+    transition: background-color 1s;
+}
+
+main .advert div a:hover {
+    background-color: var(--black);
+    color: var(--white);
+    transition: background-color 3s;
+
+}
+
+
+main .advert article img {
+    width: 50%;
+    margin: auto;
+    box-shadow: 10px 10px 0px 0px var(--white);
+
+}
+
+main .advert .advert_one{
+    display: flex;
+    margin-top: 20px;
+    text-align : right;
+}
+
+main .advert .advert_two,
+main .advert .advert_three {
+    display: flex;
+    margin-top : 70px
+}
+
+main .advert .advert_one div,
+main .advert .advert_three div {
+    text-align : right;
+    margin : 50px 170px 0 0  ;
+}
+
+main .advert .advert_two div {
+    text-align : left;
+    margin : 50px 0 0 170px ;
+}
+
+/* footer */
+
+footer {
+    background-color: var(--black);
+    text-align: center;
+    border-top: 3px solid gray;
+    padding : 30px 0;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact {
+    margin :0;
+    color: var(--white);
+}
+
+.tel {
+    color: var(--white);
+}
+
+.horaire {
+    color: var(--white);
+    font-size: 0.8rem;
+}
+
+footer nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    margin: 60px 200px;
+}
+
+footer nav ul li a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--white);
+    border: 1px solid var(--white);
+    padding : 5px 20px;
+    border-radius: 20px;
+}
+
+.logo_réseau {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    filter: invert(100%);
+    gap : 50px;
+}
+
+.logo_réseau img {
+    width: 150%;
+}
+
+.Copyright {
+    color: gray;
+    font-size: 1rem;
+}
+
+/* tableau */
+
+.allAnnonce{
+    text-decoration: none;
+    color: var(--white);
+    margin-left: 10%;
+    border: 1px solid var(--pink);
+    background-color: var(--pink);
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+table {
+    margin: 50px auto;
+}
+
+.first_line {
+    background :  transparent linear-gradient(120deg, var(--pink) 0%, var(--yellow) 100%);
+}
+
+th {
+    padding: 15px 50px;
+    font-size: 1.2rem;
+}
+
+td {
+    padding: 5px 50px;
+    text-align: center;
+}
+
+tr:hover {
+    background: transparent linear-gradient(120deg, var(--pink) 0%, var(--yellow) 100%);;
+}
+
+/* ADD */
+
+form {
+    text-align: center;
+    margin: auto;
+    width: 25%;
+}
+
+form div {
+    padding: 20px 20px;
+}
+
+form div label {
+    font-size: 1.2rem;
+}
+
+form div input,
+form div select {
+    padding: 5px 50px;
+    text-align: center;
+}
+
+.button {
+    margin-top: 50px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: var(--colorInput);
+}
+
+.table_manage th {
+    padding: 15px 30px!important;
+}
+
+.table_manage td {
+    padding: 10px 30px!important;
+}
+
+.icon1,
+.icon2,
+.icon3 {
+    width: 60%;
+}
+
+.icon3 {
+    filter: invert(100%);
+}
+
+/* SEE MORE */
+
+.create {
+    text-align: right;
+    margin-right: 300px;
+    font-size: 1.2rem;
+}
+
+.type {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.adress {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.description {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.price {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.delete {
+    width: 40%;
+}
